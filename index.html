@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <section>
+            <div class="banner-section">
+                <div class="banner-right">
+                    <div class="profile">
+                        <div class="image">
+                            <img src="./img/elon.jpg" alt="" width="200px">
+                        </div>
+                        <div class="details">
+                        <h5>Elon Musk</h5>
+                        <p>2036 files</p>
+                        <button>UPLOAD</button>
+                        <h6>Search Files</h6>
+                        </div>
+                        <div class="details1">
+                            <h2>CATEGORIES:</h2>
+                            <P id="title">Title:</P>
+                            <p id="year">Year:</p>
+                            <p id="genre">Genre:</p>
+                            <p id="producer">Producer:</p>
+                            <p id="label">Label:</p>
+                        </div>
+                        <div class="details2">
+                            <h2>ALBUMS</h2>
+                            <p>Subcarpathia 2022</p>
+                            <p style="padding-right: 65px;">Summer 2022</p>
+                        </div>
+                        <div class="details3">
+                            <p>powered by miracle @ 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-left">
+                    <div class="boxes">
+                        <div  class="box1" id="one"></div>
+                        <div  class="box2" id="two"></div>
+                        <div  class="box3" id="three"></div>
+                        <div  class="box4" id="four"></div>
+                        <div  class="box5" id="five"></div>
+                        <div  class="box6" id="six"></div>
+                        <div  class="box7" id="seven"></div>
+                        <div  class="box8" id="eight"></div>
+                        <div  class="box9" id="nine"></div>
+                        <div  class="box10" id="ten"></div>
+                        <div  class="box11" id="eleven"></div>
+                        <div  class="box12" id="twelve"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let a ={
+            title: 'Title  :  Call me by Your name',
+            year:'Year : 2017',
+            genre:'Genre : Drama',
+            producer:'Producer : Luca Guadagnino',
+            label:'Label: G',
+        }
+
+        let infotitle = title.textContent 
+        let infoyear = year.textContent
+        let infogenre = genre.textContent
+        let infoproducer = producer.textContent
+        let infolabel = label.textContent
+
+
+        one.addEventListener('mousemove',() =>{
+            title.innerHTML = a.title;
+            year.innerHTML = a.year;
+            genre.innerHTML = a.genre;
+            producer.innerHTML = a.producer
+            label.innerHTML = a.label
+        })
+        one.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle;
+            year.innerHTML = infoyear;
+            genre.innerHTML = infogenre;
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let b ={
+            title:'Title : The Departed',
+            year:'Year : 2006',
+            genre:'Genre : Action',
+            producer:'Producer : Martin Scorsese',
+            label:'Label: R'
+        }
+
+
+        two.addEventListener('mousemove',() =>{
+            title.innerHTML = b.title;
+            year.innerHTML = b.year;
+            genre.innerHTML = b.genre;
+            producer.innerHTML = b.producer
+            label.innerHTML = b.label
+        })
+        two.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle;
+            year.innerHTML = infoyear;
+            genre.innerHTML = infogenre;
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let c ={
+            title:'Title : The Fast and the Furious',
+            year:'Year : 2001',
+            genre:'Genre : Action',
+            producer:'Producer : Rob Cohen',
+            label:'Label: PG'
+        }
+
+        three.addEventListener('mousemove',() =>{
+            title.innerHTML = c.title;
+            year.innerHTML = c.year;
+            genre.innerHTML = c.genre;
+            producer.innerHTML = c.producer
+            label.innerHTML = c.label
+        })
+        three.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle;
+            year.innerHTML = infoyear;
+            genre.innerHTML = infogenre;
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+        let d ={
+            title:'Title : Collateral',
+            year:'Year : 2004',
+            genre:'Genre : Action',
+            producer:'Producer : Michael Mann',
+            label:'Label: G'
+        }
+        four.addEventListener('mousemove',() =>{
+            title.innerHTML = d.title;
+            year.innerHTML = d.year
+            genre.innerHTML = d.genre
+            producer.innerHTML = d.producer
+            label.innerHTML = d.label
+        })
+        four.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+
+        let e ={
+            title:'Title : Titanic',
+            year:'Year : 1997',
+            genre:'Genre : Drama',
+            producer:'Producer : James Cameron',
+            label:'Label: G'
+        }
+        five.addEventListener('mousemove',() =>{
+            title.innerHTML = e.title;
+            year.innerHTML = e.year
+            genre.innerHTML = e.genre
+            producer.innerHTML = e.producer
+            label.innerHTML = e.label
+        })
+        five.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let f ={
+            title:'Title : Heat',
+            year:'Year : 1995',
+            genre:'Genre : Action',
+            producer:'Producer : Michael Mann',
+            label:'Label: PG'
+        }
+        six.addEventListener('mousemove',() =>{
+            title.innerHTML = f.title;
+            year.innerHTML = f.year
+            genre.innerHTML = f.genre
+            producer.innerHTML = f.producer
+            label.innerHTML = f.label
+        })
+        six.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let g ={
+            title:'Title : Rocky',
+            year:'Year : 1976',
+            genre:'Genre : Action',
+            producer:'Producer : John Avildsen',
+            label:'Label: R'
+        }
+        seven.addEventListener('mousemove',() =>{
+            title.innerHTML = g.title;
+            year.innerHTML = g.year
+            genre.innerHTML = g.genre
+            producer.innerHTML = g.producer
+            label.innerHTML = g.label
+        })
+        seven.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let h ={
+            title:'Title : Pride & Prejudice',
+            year:'Year : 2005',
+            genre:'Genre : Drama',
+            producer:'Producer : Joe Wright',
+            label:'Label: PG'
+        }
+        eight.addEventListener('mousemove',() =>{
+            title.innerHTML = h.title;
+            year.innerHTML = h.year
+            genre.innerHTML = h.genre
+            producer.innerHTML = h.producer
+            label.innerHTML = h.label
+        })
+        eight.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let i ={
+            title:'Title : Arrival',
+            year:'Year : 2016',
+            genre:'Genre : Drama',
+            producer:'Producer : Denis Vileneuve',
+            label:'Label: G'
+        }
+        nine.addEventListener('mousemove',() =>{
+            title.innerHTML = i.title;
+            year.innerHTML = i.year
+            genre.innerHTML = i.genre
+            producer.innerHTML = i.producer
+            label.innerHTML = i.label
+        })
+        nine.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let j ={
+            title:'Title : The Power of the Dog',
+            year:'Year : 2021',
+            genre:'Genre : Drama',
+            producer:'Producer : Jane Campion',
+            label:'Label: PG'
+        }
+        ten.addEventListener('mousemove',() =>{
+            title.innerHTML = j.title;
+            year.innerHTML = j.year
+            genre.innerHTML = j.genre
+            producer.innerHTML = j.producer
+            label.innerHTML = j.label
+        })
+        ten.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let k ={
+            title:'Title : Jaws',
+            year:'Year : 1975',
+            genre:'Genre : Action',
+            producer:'Producer : Steven Spielberg',
+            label:'Label: PG'
+        }
+        eleven.addEventListener('mousemove',() =>{
+            title.innerHTML = k.title;
+            year.innerHTML = k.year
+            genre.innerHTML = k.genre
+            producer.innerHTML = k.producer
+            label.innerHTML = k.label
+        })
+        eleven.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+
+
+        let l ={
+            title:'Title : The Raid 2',
+            year:'Year : 2014',
+            genre:'Genre : Action',
+            producer:'Producer : Gareth Evans',
+            label:'Label: R'
+        }
+        twelve.addEventListener('mousemove',() =>{
+            title.innerHTML = l.title;
+            year.innerHTML = l.year
+            genre.innerHTML = l.genre
+            producer.innerHTML = l.producer
+            label.innerHTML = l.label
+        })
+        twelve.addEventListener('mouseleave',() =>{
+            title.innerHTML = infotitle
+            year.innerHTML = infoyear
+            genre.innerHTML = infogenre
+            producer.innerHTML = infoproducer
+            label.innerHTML = infolabel
+        })
+    </script>
+</body>
+</html>

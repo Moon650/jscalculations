@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+    <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        section{
+            background-color: khaki;
+            height: 100vh;
+        }
+        .banner{
+            overflow: hidden;
+        }
+        .banner-section{
+            display: grid;
+            gap: 30px;
+            margin: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .left{
+            background-color: black;
+            height: 75vh;
+            width: 80%;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+
+        }
+        .inpu{
+            margin: 10px;
+        }
+        .inpu label{
+            color: white;
+            padding: 5px;
+            font-size: 13px;
+        }
+        .inpu .inp{
+            border-radius: 10px;
+            padding: 10px 15px;
+        }
+        .middle{
+            background-color: black;
+            height: 75vh;
+            margin-top: 40px;
+            width: 80%;
+            margin-bottom: 20px;
+
+
+        }
+        .right{
+            background-color: black;
+            height: 75vh;
+            margin-top: 40px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .down{
+            background-color: black;
+            height: 10vh;
+            width: 50%;
+            margin: auto ;
+        }
+        .down1{
+            /* margin-left: 45px; */
+            padding-top: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .down1 button{
+            padding: 8px 12px;
+            border-radius: 10px;
+        }
+        .down1 .web{
+            background: white;
+            width: 40%;
+            border-radius: 10px;
+            height: 8vh;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="banner">
+            <div class="banner-section">
+                <div class="left">
+                    <div class="inpu">
+                        <label for="">MATHEMATICS</label><br>
+                        <input type="text" class="inp"  id="num1">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">ENGLISH LANGUAGE</label><br>
+                        <input type="text" class="inp"  id="num2">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">CHEMISTRY</label><br>
+                        <input type="text" class="inp"  id="num3">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">PHYSICS</label><br>
+                        <input type="text" class="inp"  id="num4">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">FRENCH</label><br>
+                        <input type="text" class="inp"  id="num5">
+                    </div><br>
+                </div>
+                <div class="middle">
+                    <div class="inpu">
+                        <label for="">BIOLOGY</label><br>
+                        <input type="text" class="inp"  id="num6">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">CIVIC EDUCATION</label><br>
+                        <input type="text" class="inp"  id="num7">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">FURTHER MATHEMATICS</label><br>
+                        <input type="text" class="inp"  id="num8">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">GEOGRAPHY</label><br>
+                        <input type="text" class="inp"  id="num9">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">AGRICULTURAL SCIENCE</label><br>
+                        <input type="text" class="inp"  id="num10">
+                    </div><br>
+                </div>
+                <div class="right">
+                    <div class="inpu">
+                        <label for="">IGBO LANGUAGE</label><br>
+                        <input type="text" class="inp"  id="num11">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">ECONOMICS</label><br>
+                        <input type="text" class="inp"  id="num12">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">GOVERNMENT</label><br>
+                        <input type="text" class="inp"  id="num13">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">ACCOUNTING</label><br>
+                        <input type="text" class="inp"  id="num14">
+                    </div><br>
+                    <div class="inpu">
+                        <label for="">COMPUTER SCIENCE</label><br>
+                        <input type="text" class="inp"  id="num15">
+                    </div><br>
+                </div>
+            </div>
+            <div class="down">
+                <div class="down1">
+                    <button id="ave">AVERAGE</button>
+                    <div id="web" class="web"></div>
+                    <button id="total">TOTAL</button>
+                    <button id="reset">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        ave.addEventListener('click', () =>{
+            let num1 = document.getElementById('num1').value;
+                num1 = parseInt(num1);
+            let num2 = document.getElementById('num2').value;
+                num2 = parseInt(num2);
+            let num3 = document.getElementById('num3').value;
+                num3 = parseInt(num3);
+            let num4 = document.getElementById('num4').value;
+                num4 = parseInt(num4);
+            let num5 = document.getElementById('num5').value;
+                num5 = parseInt(num5);
+           let num6 = document.getElementById('num6').value;
+               num6 = parseInt(num6);
+            let num7 = document.getElementById('num7').value;
+                num7 = parseInt(num7);
+            let num8 = document.getElementById('num8').value;
+                num8 = parseInt(num8);
+            let num9 = document.getElementById('num9').value;
+                num9 = parseInt(num9);
+            let num10 = document.getElementById('num10').value;
+                num10 = parseInt(num10);
+            let num11 = document.getElementById('num11').value;
+                num11 = parseInt(num11);
+           let num12 = document.getElementById('num12').value;
+               num12 = parseInt(num12);
+            let num13 = document.getElementById('num13').value;
+               num13 = parseInt(num13);
+           let num14 = document.getElementById('num14').value;
+              num14 = parseInt(num14);
+            let num15 = document.getElementById('num15').value;
+               num15 = parseInt(num15);
+
+            let total = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 + num11 + num12 + num13 + num14 + num15;
+            let average = total/15;
+            document.getElementById('web').innerHTML = average;
+        })
+
+        total.addEventListener('click', () =>{
+            let num1 = document.getElementById('num1').value;
+               num1 = parseInt(num1);
+            let num2 = document.getElementById('num2').value;
+                num2 = parseInt(num2);
+            let num3 = document.getElementById('num3').value;
+               num3 = parseInt(num3);
+            let num4 = document.getElementById('num4').value;
+                num4 = parseInt(num4);
+            let num5 = document.getElementById('num5').value;
+                num5 = parseInt(num5);
+           let num6 = document.getElementById('num6').value;
+               num6 = parseInt(num6);
+            let num7 = document.getElementById('num7').value;
+               num7 = parseInt(num7);
+            let num8 = document.getElementById('num8').value;
+               num8 = parseInt(num8);
+            let num9 = document.getElementById('num9').value;
+                num9 = parseInt(num9);
+            let num10 = document.getElementById('num10').value;
+                num10 = parseInt(num10);
+            let num11 = document.getElementById('num11').value;
+                num11 = parseInt(num11);
+           let num12 = document.getElementById('num12').value;
+               num12 = parseInt(num12);
+            let num13 = document.getElementById('num13').value;
+               num13 = parseInt(num13);
+           let num14 = document.getElementById('num14').value;
+               num14 = parseInt(num14);
+            let num15 = document.getElementById('num15').value;
+               num15 = parseInt(num15);
+
+            let sum = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 + num11 + num12 + num13 + num14 + num15;
+            document.getElementById('web').innerHTML = sum;
+        })
+
+        reset.addEventListener('click', () =>{
+            document.getElementById('num1').value = "";
+            document.getElementById('num2').value = "";
+            document.getElementById('num3').value = "";
+            document.getElementById('num4').value = "";
+            document.getElementById('num5').value = "";
+            document.getElementById('num6').value = "";
+            document.getElementById('num7').value = "";
+            document.getElementById('num8').value = "";
+            document.getElementById('num9').value = "";
+            document.getElementById('num10').value = "";
+            document.getElementById('num11').value = "";
+            document.getElementById('num12').value = "";
+            document.getElementById('num13').value = "";
+            document.getElementById('num14').value = "";
+            document.getElementById('num15').value = "";
+            document.getElementById('web').innerHTML = "";
+        })
+
+
+
+    </script>
+</body>
+</html>
